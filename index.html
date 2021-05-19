@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>E-millenial store</title>
+</head>
+<body>
+    <section id="intro">
+        <main>
+            <nav>
+                <img src="./Project Files/Images/EMS.svg" alt="">
+                <ul>
+                    <li>
+                        <a href="#intro">Intro</a>
+                        <a href="#about">About</a>
+                        <a href="#shop">Shop</a>
+                    </li>
+                </ul>
+                <span><img src="./Project Files/Images/cart.svg" alt="" onclick="showCheckOut()">
+                    <p id="cartcounter">0</p>
+                </span>
+            </nav>
+            <div class="checkout" id="cart" style="display: none;">
+                <div class="cart-items">
+                    <p style="text-align: left; width: 80%; border-bottom: 0.2px solid grey; padding: 10px;">Your Order</p>
+
+                    <!-- insert javascript template -->
+
+
+                </div>
+                <form action="" style="display: none;">
+                    <input type="text" name="" id="name" placeholder="Name" onblur="nameValidation()">
+                    <p id="errorName"></p>
+                    <input type="email" name="" id="email" placeholder="Email-address" onblur='emailValidation()'>
+                    <p id="errorMail"></p>
+                    <input type="tel" name="" id="phonenumber" placeholder="Phone number" onblur="numberValidation()">
+                    <p id="errorNumber"></p>
+                </form>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; width: 80%;">
+                    <h2 id>Total</h2>
+                    <h3 id="total"></h3>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="X" onclick="closeCheckOut()">
+                    <input type="submit" value="Checkout">
+                </div>
+            </div>
+            <div>
+                <h1>
+                    The e-millenial store
+                </h1>
+                <img src="./Project Files/Images/heroImage.png" alt="">
+            </div>
+            <div class="button">
+                <button><a href="#shop">SHOP NOW</a> </button>
+            </div>
+        </main>
+    </section>
+    <section id="about">
+        <main>
+            <p>
+                E-millenial store is an hypothetical online store for gadgets we believe every 'Milenial' or 'Gen-Z'
+                should
+                have today.
+                we've got mobile phones, laptops, smartwatches and other gadgets. Explore all our gadgets and choose the
+                ones that suit you.
+            </p>
+        </main>
+    </section>
+    <section id="shop">
+        <main>
+            <h3>our gadgets</h3>
+            <div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product1.png" alt="" class="class-image">
+                    <p class="shop-item-title">samsung tv</p>
+                    <button type="submit" value="500,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">500</p>
+                    </div>
+                </div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product2.png" alt="" class="class-image">
+                    <p class="shop-item-title">pixel 4a</p>
+                    <button type="submit" value="250,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">250</p>
+                    </div>
+                </div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product3.png" alt="" class="class-image">
+                    <p class="shop-item-title">ps 5</p>
+                    <button type="submit" value="350,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">350</p>
+                    </div>
+                </div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product4.png" alt="" class="class-image">
+                    <p class="shop-item-title">macbook air</p>
+                    <button type="submit" value="800,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">800</p>
+                    </div>
+                </div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product5.png" alt="" class="class-image">
+                    <p class="shop-item-title">apple watch</p>
+                    <button type="submit" value="100,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">100</p>
+                    </div>
+                </div>
+                <div class="shop-item" style="position: relative;">
+                    <img src="./Project Files/Images/product6.png" alt="" class="class-image">
+                    <p class="shop-item-title">air pods</p>
+                    <button type="submit" value="80,000" class="click">Add to cart</button>
+                    <div class="price">
+                        <p>Price</p>
+                        <p class="cost">80</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <main>
+            <img src="./Project Files/Images/EMS.svg" alt="">
+            <p>
+                Designed and Crafted by jefedcreator
+            </p>
+        </main>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
